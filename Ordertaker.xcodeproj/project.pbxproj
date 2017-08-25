@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EDD8C26C19B16B7937BF5E2 /* Pods_OrdertakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068B2A9CA5AD9DFCAA40DCBD /* Pods_OrdertakerTests.framework */; };
+		89E89176BC230213689F655B /* Pods_Ordertaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A37E58EA5EB175BCE9B891 /* Pods_Ordertaker.framework */; };
+		A0A9C4A224645B7C17254485 /* Pods_OrdertakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A18C6B89E4A13660CD55E4 /* Pods_OrdertakerUITests.framework */; };
+		B96BAA221F5078B100DB31C4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA211F5078B100DB31C4 /* WelcomeViewController.swift */; };
+		B96BAA261F5095FD00DB31C4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA251F5095FD00DB31C4 /* OrdersViewController.swift */; };
+		B96BAA2B1F50983E00DB31C4 /* ChooseMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA2A1F50983E00DB31C4 /* ChooseMenuViewController.swift */; };
+		B96BAA2D1F5098BE00DB31C4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA2C1F5098BE00DB31C4 /* MenuViewController.swift */; };
+		B96BAA2F1F50999600DB31C4 /* ProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA2E1F50999600DB31C4 /* ProductFormViewController.swift */; };
+		B96BAA311F509CAE00DB31C4 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96BAA301F509CAE00DB31C4 /* ProductTableViewCell.xib */; };
+		B96BAA331F509CC400DB31C4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA321F509CC400DB31C4 /* ProductTableViewCell.swift */; };
+		B96BAA351F50A04C00DB31C4 /* OrderFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA341F50A04C00DB31C4 /* OrderFormViewController.swift */; };
+		B96BAA371F50A1C200DB31C4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */; };
 		B9835B221F50750000568490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9835B211F50750000568490 /* AppDelegate.swift */; };
-		B9835B241F50750000568490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9835B231F50750000568490 /* ViewController.swift */; };
 		B9835B271F50750000568490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9835B251F50750000568490 /* Main.storyboard */; };
 		B9835B291F50750000568490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9835B281F50750000568490 /* Assets.xcassets */; };
 		B9835B2C1F50750000568490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9835B2A1F50750000568490 /* LaunchScreen.storyboard */; };
@@ -34,9 +45,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		068B2A9CA5AD9DFCAA40DCBD /* Pods_OrdertakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrdertakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DAE7F605CDD645CA689992 /* Pods-OrdertakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrdertakerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrdertakerUITests/Pods-OrdertakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16A18C6B89E4A13660CD55E4 /* Pods_OrdertakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrdertakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B00B14582C0BD03FDDE5D92 /* Pods-OrdertakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrdertakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrdertakerTests/Pods-OrdertakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		60A37E58EA5EB175BCE9B891 /* Pods_Ordertaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ordertaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		667FC4C77326BC2390D9862D /* Pods-OrdertakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrdertakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrdertakerUITests/Pods-OrdertakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87D9606B098B7EF147C19282 /* Pods-OrdertakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrdertakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrdertakerTests/Pods-OrdertakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B96BAA211F5078B100DB31C4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B96BAA251F5095FD00DB31C4 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		B96BAA2A1F50983E00DB31C4 /* ChooseMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseMenuViewController.swift; sourceTree = "<group>"; };
+		B96BAA2C1F5098BE00DB31C4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B96BAA2E1F50999600DB31C4 /* ProductFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFormViewController.swift; sourceTree = "<group>"; };
+		B96BAA301F509CAE00DB31C4 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		B96BAA321F509CC400DB31C4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		B96BAA341F50A04C00DB31C4 /* OrderFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFormViewController.swift; sourceTree = "<group>"; };
+		B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		B9835B1E1F50750000568490 /* Ordertaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordertaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9835B211F50750000568490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9835B231F50750000568490 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9835B261F50750000568490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9835B281F50750000568490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9835B2B1F50750000568490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +73,8 @@
 		B9835B3D1F50750000568490 /* OrdertakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdertakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9835B411F50750000568490 /* OrdertakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdertakerUITests.swift; sourceTree = "<group>"; };
 		B9835B431F50750000568490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA713F4BF1E57299768322E6 /* Pods-Ordertaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordertaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ordertaker/Pods-Ordertaker.release.xcconfig"; sourceTree = "<group>"; };
+		EED7A60D16E7F35446421012 /* Pods-Ordertaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ordertaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ordertaker/Pods-Ordertaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E89176BC230213689F655B /* Pods_Ordertaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDD8C26C19B16B7937BF5E2 /* Pods_OrdertakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A9C4A224645B7C17254485 /* Pods_OrdertakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B813D8752003292CBFB670E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A37E58EA5EB175BCE9B891 /* Pods_Ordertaker.framework */,
+				068B2A9CA5AD9DFCAA40DCBD /* Pods_OrdertakerTests.framework */,
+				16A18C6B89E4A13660CD55E4 /* Pods_OrdertakerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B96BAA231F5095AC00DB31C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B96BAA211F5078B100DB31C4 /* WelcomeViewController.swift */,
+				B96BAA251F5095FD00DB31C4 /* OrdersViewController.swift */,
+				B96BAA2A1F50983E00DB31C4 /* ChooseMenuViewController.swift */,
+				B96BAA2C1F5098BE00DB31C4 /* MenuViewController.swift */,
+				B96BAA2E1F50999600DB31C4 /* ProductFormViewController.swift */,
+				B96BAA341F50A04C00DB31C4 /* OrderFormViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B96BAA241F5095B700DB31C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B96BAA271F50963000DB31C4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B96BAA301F509CAE00DB31C4 /* ProductTableViewCell.xib */,
+				B96BAA321F509CC400DB31C4 /* ProductTableViewCell.swift */,
+				B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		B9835B151F50750000568490 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +152,8 @@
 				B9835B351F50750000568490 /* OrdertakerTests */,
 				B9835B401F50750000568490 /* OrdertakerUITests */,
 				B9835B1F1F50750000568490 /* Products */,
+				BB8C3DD6FB3AFA32BA008353 /* Pods */,
+				B813D8752003292CBFB670E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +170,10 @@
 		B9835B201F50750000568490 /* Ordertaker */ = {
 			isa = PBXGroup;
 			children = (
+				B96BAA271F50963000DB31C4 /* Cells */,
+				B96BAA231F5095AC00DB31C4 /* Controllers */,
+				B96BAA241F5095B700DB31C4 /* Models */,
 				B9835B211F50750000568490 /* AppDelegate.swift */,
-				B9835B231F50750000568490 /* ViewController.swift */,
 				B9835B251F50750000568490 /* Main.storyboard */,
 				B9835B281F50750000568490 /* Assets.xcassets */,
 				B9835B2A1F50750000568490 /* LaunchScreen.storyboard */,
@@ -125,6 +200,19 @@
 			path = OrdertakerUITests;
 			sourceTree = "<group>";
 		};
+		BB8C3DD6FB3AFA32BA008353 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED7A60D16E7F35446421012 /* Pods-Ordertaker.debug.xcconfig */,
+				DA713F4BF1E57299768322E6 /* Pods-Ordertaker.release.xcconfig */,
+				87D9606B098B7EF147C19282 /* Pods-OrdertakerTests.debug.xcconfig */,
+				3B00B14582C0BD03FDDE5D92 /* Pods-OrdertakerTests.release.xcconfig */,
+				12DAE7F605CDD645CA689992 /* Pods-OrdertakerUITests.debug.xcconfig */,
+				667FC4C77326BC2390D9862D /* Pods-OrdertakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9835B461F50750000568490 /* Build configuration list for PBXNativeTarget "Ordertaker" */;
 			buildPhases = (
+				15190E76C3AC23B0830D8920 /* [CP] Check Pods Manifest.lock */,
 				B9835B1A1F50750000568490 /* Sources */,
 				B9835B1B1F50750000568490 /* Frameworks */,
 				B9835B1C1F50750000568490 /* Resources */,
+				F8EFDB56775188BC1AD56133 /* [CP] Embed Pods Frameworks */,
+				BC7864C79F715861D6964147 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9835B491F50750000568490 /* Build configuration list for PBXNativeTarget "OrdertakerTests" */;
 			buildPhases = (
+				8E4B37C39F871BB57B57B35D /* [CP] Check Pods Manifest.lock */,
 				B9835B2E1F50750000568490 /* Sources */,
 				B9835B2F1F50750000568490 /* Frameworks */,
 				B9835B301F50750000568490 /* Resources */,
+				D506E77B87DC0AE81186318E /* [CP] Embed Pods Frameworks */,
+				0EA5275D90629966E9C04C37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9835B4C1F50750000568490 /* Build configuration list for PBXNativeTarget "OrdertakerUITests" */;
 			buildPhases = (
+				84906B41F996689061CB1632 /* [CP] Check Pods Manifest.lock */,
 				B9835B391F50750000568490 /* Sources */,
 				B9835B3A1F50750000568490 /* Frameworks */,
 				B9835B3B1F50750000568490 /* Resources */,
+				0A1D560B70EA50B9809D4C37 /* [CP] Embed Pods Frameworks */,
+				E8214302E3A3B11396808665 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9835B2C1F50750000568490 /* LaunchScreen.storyboard in Resources */,
+				B96BAA311F509CAE00DB31C4 /* ProductTableViewCell.xib in Resources */,
 				B9835B291F50750000568490 /* Assets.xcassets in Resources */,
 				B9835B271F50750000568490 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +355,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A1D560B70EA50B9809D4C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrdertakerUITests/Pods-OrdertakerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EA5275D90629966E9C04C37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrdertakerTests/Pods-OrdertakerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15190E76C3AC23B0830D8920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84906B41F996689061CB1632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4B37C39F871BB57B57B35D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7864C79F715861D6964147 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ordertaker/Pods-Ordertaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D506E77B87DC0AE81186318E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrdertakerTests/Pods-OrdertakerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8214302E3A3B11396808665 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrdertakerUITests/Pods-OrdertakerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8EFDB56775188BC1AD56133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ordertaker/Pods-Ordertaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9835B1A1F50750000568490 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9835B241F50750000568490 /* ViewController.swift in Sources */,
 				B9835B221F50750000568490 /* AppDelegate.swift in Sources */,
+				B96BAA331F509CC400DB31C4 /* ProductTableViewCell.swift in Sources */,
+				B96BAA2F1F50999600DB31C4 /* ProductFormViewController.swift in Sources */,
+				B96BAA2D1F5098BE00DB31C4 /* MenuViewController.swift in Sources */,
+				B96BAA261F5095FD00DB31C4 /* OrdersViewController.swift in Sources */,
+				B96BAA221F5078B100DB31C4 /* WelcomeViewController.swift in Sources */,
+				B96BAA371F50A1C200DB31C4 /* OrderTableViewCell.swift in Sources */,
+				B96BAA2B1F50983E00DB31C4 /* ChooseMenuViewController.swift in Sources */,
+				B96BAA351F50A04C00DB31C4 /* OrderFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +658,7 @@
 		};
 		B9835B471F50750000568490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED7A60D16E7F35446421012 /* Pods-Ordertaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4GCV55S6H;
@@ -428,6 +672,7 @@
 		};
 		B9835B481F50750000568490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA713F4BF1E57299768322E6 /* Pods-Ordertaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W4GCV55S6H;
@@ -441,6 +686,7 @@
 		};
 		B9835B4A1F50750000568490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D9606B098B7EF147C19282 /* Pods-OrdertakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +702,7 @@
 		};
 		B9835B4B1F50750000568490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B00B14582C0BD03FDDE5D92 /* Pods-OrdertakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +718,7 @@
 		};
 		B9835B4D1F50750000568490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12DAE7F605CDD645CA689992 /* Pods-OrdertakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W4GCV55S6H;
@@ -485,6 +733,7 @@
 		};
 		B9835B4E1F50750000568490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667FC4C77326BC2390D9862D /* Pods-OrdertakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W4GCV55S6H;
@@ -516,6 +765,7 @@
 				B9835B481F50750000568490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9835B491F50750000568490 /* Build configuration list for PBXNativeTarget "OrdertakerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +774,7 @@
 				B9835B4B1F50750000568490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9835B4C1F50750000568490 /* Build configuration list for PBXNativeTarget "OrdertakerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +783,7 @@
 				B9835B4E1F50750000568490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

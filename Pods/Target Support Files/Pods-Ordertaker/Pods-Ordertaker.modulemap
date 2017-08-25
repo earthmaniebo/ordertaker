@@ -1,0 +1,6 @@
+framework module Pods_Ordertaker {
+  umbrella header "Pods-Ordertaker-umbrella.h"
+
+  export *
+  module * { export * }
+}
