@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
     }
     
     var products: Results<Product>!
-    var selectedProductId: Int!
+    var selectedProductId: Int?
     var kProductSegue = "product_form"
     var kProductCell = "product_cell"
 
@@ -38,6 +38,7 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         products = ProductDataManager.get()
         tableView.reloadData()
+        selectedProductId = nil
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,7 +61,6 @@ class MenuViewController: UIViewController {
             }
         }
     }
-
 }
 
 
