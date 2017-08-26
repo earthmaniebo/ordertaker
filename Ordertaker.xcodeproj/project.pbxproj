@@ -19,6 +19,11 @@
 		B96BAA331F509CC400DB31C4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA321F509CC400DB31C4 /* ProductTableViewCell.swift */; };
 		B96BAA351F50A04C00DB31C4 /* OrderFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA341F50A04C00DB31C4 /* OrderFormViewController.swift */; };
 		B96BAA371F50A1C200DB31C4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */; };
+		B96BAA3A1F51209E00DB31C4 /* ProductDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA391F51209E00DB31C4 /* ProductDataManager.swift */; };
+		B96BAA3C1F5120AC00DB31C4 /* OrderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA3B1F5120AC00DB31C4 /* OrderDataManager.swift */; };
+		B96BAA3E1F5120D500DB31C4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA3D1F5120D500DB31C4 /* Order.swift */; };
+		B96BAA401F5120DD00DB31C4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA3F1F5120DD00DB31C4 /* Product.swift */; };
+		B96BAA421F51215600DB31C4 /* ProductOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96BAA411F51215600DB31C4 /* ProductOrder.swift */; };
 		B9835B221F50750000568490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9835B211F50750000568490 /* AppDelegate.swift */; };
 		B9835B271F50750000568490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9835B251F50750000568490 /* Main.storyboard */; };
 		B9835B291F50750000568490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9835B281F50750000568490 /* Assets.xcassets */; };
@@ -61,6 +66,11 @@
 		B96BAA321F509CC400DB31C4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		B96BAA341F50A04C00DB31C4 /* OrderFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFormViewController.swift; sourceTree = "<group>"; };
 		B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		B96BAA391F51209E00DB31C4 /* ProductDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataManager.swift; sourceTree = "<group>"; };
+		B96BAA3B1F5120AC00DB31C4 /* OrderDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDataManager.swift; sourceTree = "<group>"; };
+		B96BAA3D1F5120D500DB31C4 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		B96BAA3F1F5120DD00DB31C4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B96BAA411F51215600DB31C4 /* ProductOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOrder.swift; sourceTree = "<group>"; };
 		B9835B1E1F50750000568490 /* Ordertaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordertaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9835B211F50750000568490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9835B261F50750000568490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +141,9 @@
 		B96BAA241F5095B700DB31C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B96BAA3D1F5120D500DB31C4 /* Order.swift */,
+				B96BAA3F1F5120DD00DB31C4 /* Product.swift */,
+				B96BAA411F51215600DB31C4 /* ProductOrder.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -143,6 +156,15 @@
 				B96BAA361F50A1C200DB31C4 /* OrderTableViewCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		B96BAA381F51205300DB31C4 /* DataHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				B96BAA391F51209E00DB31C4 /* ProductDataManager.swift */,
+				B96BAA3B1F5120AC00DB31C4 /* OrderDataManager.swift */,
+			);
+			name = DataHelpers;
 			sourceTree = "<group>";
 		};
 		B9835B151F50750000568490 = {
@@ -170,9 +192,10 @@
 		B9835B201F50750000568490 /* Ordertaker */ = {
 			isa = PBXGroup;
 			children = (
-				B96BAA271F50963000DB31C4 /* Cells */,
 				B96BAA231F5095AC00DB31C4 /* Controllers */,
+				B96BAA381F51205300DB31C4 /* DataHelpers */,
 				B96BAA241F5095B700DB31C4 /* Models */,
+				B96BAA271F50963000DB31C4 /* Cells */,
 				B9835B211F50750000568490 /* AppDelegate.swift */,
 				B9835B251F50750000568490 /* Main.storyboard */,
 				B9835B281F50750000568490 /* Assets.xcassets */,
@@ -500,13 +523,18 @@
 			files = (
 				B9835B221F50750000568490 /* AppDelegate.swift in Sources */,
 				B96BAA331F509CC400DB31C4 /* ProductTableViewCell.swift in Sources */,
+				B96BAA3C1F5120AC00DB31C4 /* OrderDataManager.swift in Sources */,
 				B96BAA2F1F50999600DB31C4 /* ProductFormViewController.swift in Sources */,
 				B96BAA2D1F5098BE00DB31C4 /* MenuViewController.swift in Sources */,
 				B96BAA261F5095FD00DB31C4 /* OrdersViewController.swift in Sources */,
+				B96BAA3E1F5120D500DB31C4 /* Order.swift in Sources */,
 				B96BAA221F5078B100DB31C4 /* WelcomeViewController.swift in Sources */,
 				B96BAA371F50A1C200DB31C4 /* OrderTableViewCell.swift in Sources */,
 				B96BAA2B1F50983E00DB31C4 /* ChooseMenuViewController.swift in Sources */,
 				B96BAA351F50A04C00DB31C4 /* OrderFormViewController.swift in Sources */,
+				B96BAA3A1F51209E00DB31C4 /* ProductDataManager.swift in Sources */,
+				B96BAA421F51215600DB31C4 /* ProductOrder.swift in Sources */,
+				B96BAA401F5120DD00DB31C4 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

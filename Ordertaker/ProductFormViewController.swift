@@ -18,6 +18,7 @@ class ProductFormViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     
     @IBAction func didTapSaveButton(_ sender: Any) {
+        save()
         self.navigationController?.popViewController(animated: true)
     }
 
@@ -25,12 +26,31 @@ class ProductFormViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    var selectedProductId: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let productId = selectedProductId {
+            let product = ProductDataManager.get(id: productId)
+            idTextField.text = String(product?.id ?? 0)
+            idTextField.isUserInteractionEnabled = false
+            productNameTextField.text = product?.name
+            descriptionTextField.text = product?.productDescription
+            priceTextField.text = String(product?.price ?? 0)
+        }
     }
-
+    
+    func save() {
+        let product = Product()
+        product.id = Int(idTextField.text ?? "0")!
+        product.name = productNameTextField.text ?? ""
+        product.productDescription = descriptionTextField.text ?? ""
+        product.price = Int(priceTextField.text ?? "0")!
+        
+        ProductDataManager.add(product)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,5 +66,4 @@ class ProductFormViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
