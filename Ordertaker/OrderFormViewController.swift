@@ -46,4 +46,10 @@ class OrderFormViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
+    func newOrder() {
+        let order = Order()
+        order.id = Int(idTextField.text ?? "0")!
+        order.customer = nameTextField.text ?? ""
+    }
 }
