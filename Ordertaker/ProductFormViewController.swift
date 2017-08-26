@@ -26,18 +26,18 @@ class ProductFormViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    var selectedProductId: Int?
+    var selectedProduct: Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let productId = selectedProductId {
-            let product = ProductDataManager.get(id: productId)
-            idTextField.text = String(product?.id ?? 0)
+        if let product = selectedProduct {
+//            let product = ProductDataManager.get(id: productId)
+            idTextField.text = String(product.id)
             idTextField.isUserInteractionEnabled = false
-            productNameTextField.text = product?.name
-            descriptionTextField.text = product?.productDescription
-            priceTextField.text = String(product?.price ?? 0)
+            productNameTextField.text = product.name
+            descriptionTextField.text = product.productDescription
+            priceTextField.text = String(product.price)
         }
     }
     

@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
     }
     
     var products: Results<Product>!
-    var selectedProductId: Int?
+    var selectedProduct: Product?
     var kProductSegue = "product_form"
     var kProductCell = "product_cell"
 
@@ -38,7 +38,7 @@ class MenuViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         products = ProductDataManager.get()
         tableView.reloadData()
-        selectedProductId = nil
+        selectedProduct = nil
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,7 +55,7 @@ class MenuViewController: UIViewController {
                 
             case kProductSegue:
                 let destinationVC = segue.destination as! ProductFormViewController
-                destinationVC.selectedProductId = selectedProductId
+                destinationVC.selectedProduct = selectedProduct
             default:
                 print("default");
             }
@@ -89,7 +89,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedProductId = products[indexPath.row].id
+        selectedProduct = products[indexPath.row]
         self.performSegue(withIdentifier: kProductSegue, sender: self)
     }
 }
